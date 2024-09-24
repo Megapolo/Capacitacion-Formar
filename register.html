@@ -9,7 +9,7 @@
     <img src="images/logo-mercado-liebre.svg" width="400" alt="MercadoLiebre Logo">
     <div class="register-container">
         <h2></h2>
-        <form action="datos-de-registro" method="POST">
+        <form id="formularioDePrueba" onsubmit="registrarYRedirigir(event)" action="datos-de-registro" method="POST">
             <label for="nombre">Nombre/s</label>
             <br>
             <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
@@ -54,10 +54,10 @@
             <label for="profile-picture">Seleccione foto de perfil:<input type="file" id="foto-de-perfil" accept="image/*"></label>
             <br>
             <br>
-            <label for="password">Introduzca su contraseña: <input type="password" name="password" id="password"></label>
+            <label for="password">Introduzca su contraseña: <input type="password" name="password" id="password" required></label>
             <br>
             <br>
-            <label for="password">Confirmar su contraseña: <input type="password" name="password" id="password"></label>
+            <label for="password">Confirmar su contraseña: <input type="password" name="password" id="password" required></label>
             <br>
             
             
@@ -70,6 +70,5 @@
 
         </form>
     </div>
-    
 </body>
 </html>
