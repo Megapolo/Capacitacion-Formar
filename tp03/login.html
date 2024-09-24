@@ -6,7 +6,23 @@
     <title>Login MercadoLiebre</title>
 </head>
 <body>
-    <a href="../home.html"><img src="../images/logo-mercado-liebre.svg" width="400" alt="MercadoLiebre Logo"></a>
+    <header id="inicio">
+        <a href="./home.html"><img src="../images/logo-mercado-liebre.svg" width="400" alt="MercadoLiebre Logo"></a>
+        <form action="/buscar" method="get">
+            <input type="search" name="query" placeholder="Busqueda" required>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="../home.html#Ofertas">Ofertas</a></li>
+                <li><a href="Tiendas-Oficiales">Tiendas Oficiales</a></li>
+                <li><a href="Vender">Vender</a></li>
+                <li><a href="Ayuda">Ayuda</a></li>
+                <li><a href="./register.html">Creá tu cuenta</a></li>
+                <li><a href="Mis-compras">Mis compras</a></li>
+            </ul>
+        </nav>
+        
+    </header>
     <form id="login" action="login" method="POST" onsubmit="return registrarYRedirigir()">
         <label id="nombre">Nombre de Usuario</label>
         <br>
