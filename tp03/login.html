@@ -6,7 +6,7 @@
     <title>Login MercadoLiebre</title>
 </head>
 <body>
-    <img src="images/logo-mercado-liebre.svg" alt="MercadoLiebre Logo">
+    <a href="../home.html"><img src="../images/logo-mercado-liebre.svg" width="400" alt="MercadoLiebre Logo"></a>
     <form id="login" action="login" method="POST" onsubmit="return registrarYRedirigir()">
         <label id="nombre">Nombre de Usuario</label>
         <br>
@@ -22,7 +22,7 @@
 
     <script>
         function registrarYRedirigir() {
-            window.location.href = "home.html";
+            window.location.href = "../home.html";
             return false
         }
     </script>
