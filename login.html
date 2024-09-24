@@ -7,8 +7,24 @@
 </head>
 <body>
     <img src="images/logo-mercado-liebre.svg" alt="MercadoLiebre Logo">
-    <form id="login" action="login" method="POST">
+    <form id="login" action="login" method="POST" onsubmit="return registrarYRedirigir()">
         <label for="nombre">Nombre de Usuario</label>
+        <br>
+        <input type="text" id="usuario" placeholder="Inserte nombre de usuario">
+        <br>
+        <label for="contraseña">Contraseña</label>
+        <br>
+        <input type="password" id="password" placeholder="Introduzca su contraseña">
+        <br>
+        <br>
+        <button type="submit">Logear y volver a página principal</button>
     </form>
+
+    <script>
+        function registrarYRedirigir() {
+            window.location.href = "home.html";
+            return false
+        }
+    </script>
 </body>
 </html>
