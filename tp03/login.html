@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../tp04/stylesFormularios.css">
+    <script src="https://kit.fontawesome.com/80f5c748e4.js" crossorigin="anonymous"></script>
     <title>Login MercadoLiebre</title>
 </head>
 <body>
-    <header id="inicio">
-        <a href="./home.html"><img src="../images/logo-mercado-liebre.svg" width="400" alt="MercadoLiebre Logo"></a>
-        <form action="/buscar" method="get">
-            <input type="search" name="query" placeholder="Busqueda" required>
+    <header>
+        <a href="../home.html" class="logo"><img src="../images/logo-mercado-liebre.svg" width="200vw" alt="MercadoLiebre Logo"></a>
+        <form action="/buscar" method="get" class="sreachbar">
+            <input type="search" name="query" placeholder="Busqueda" required class="sreachbar">
         </form>
+        <h2><i class="fa-solid fa-hand-holding-dollar"></i>¡Compra en cuotas y sin tarjeta de credito!</h2>
         <nav>
             <ul>
-                <li><a href="../home.html#Ofertas">Ofertas</a></li>
-                <li><a href="Tiendas-Oficiales">Tiendas Oficiales</a></li>
-                <li><a href="Vender">Vender</a></li>
-                <li><a href="Ayuda">Ayuda</a></li>
-                <li><a href="./register.html">Creá tu cuenta</a></li>
-                <li><a href="Mis-compras">Mis compras</a></li>
+                <li><a href="../home.html#Ofertas" class="primeros">Ofertas <i class="fa-solid fa-money-check-dollar"></i></a></li>
+                <li><a href="Tiendas-Oficiales" class="primeros">Tiendas Oficiales <i class="fa-solid fa-shop"></i></a></li>
+                <li><a href="Vender" class="primeros">Vender <i class="fa-regular fa-handshake"></i></a></li>
+                <li><a href="Ayuda" class="ayuda ultimos">Ayuda <i class="fa-solid fa-question"></i></a></li>
+                <li><a href="./register.html" class="ultimos">Creá tu cuenta <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="Mis-compras" class="ultimos">Mis compras <i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
         
