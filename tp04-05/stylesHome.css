@@ -8,6 +8,7 @@ body {
     font-size: 1.8vh;
     
 }
+
 header {
     background-color: #EAC926; 
     color: black; 
@@ -39,22 +40,45 @@ display: none;
 .titulares {
     font-size: 24px;
     text-align: center;
-
 }
+
+.img-articulo {
+    border-bottom: solid 1px #ebebeb;
+}
+
+.icono-articulo {
+    color: #00A650;
+    padding: 10px;
+    border: solid 2px #00A650;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
 .precios {
     font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
+
+.descuento {
+    color: #00A650;
+}
+
 .articulos {
-    border: solid black 1px;
+    padding: 5px;
+    background-color: white;
     display: flex;
     flex-direction: column;       
     width: fit-content;
-    align-items: center;
+    align-items: start;
     margin: auto;
     margin-top: 20px;
-
 }
+
 div h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 16px;
 }
 
@@ -66,7 +90,7 @@ footer {
     padding-top: 20px;
 }
 
-.icono {
+.icono-footer {
     color: #1259c3;;
     font-size: 2em;
     display: flex;
@@ -120,7 +144,6 @@ header {
     box-sizing: border-box;
     display: inline-block;
     margin-right: 20px
-
 }
 
 .sreachbar {
@@ -176,8 +199,7 @@ ul li {
 .articulos {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-bottom: solid black 1px;
+    align-items: start;
     margin-top: 20px;
     width: fit-content; 
     justify-content: space-between;

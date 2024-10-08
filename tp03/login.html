@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../tp04/stylesFormularios.css">
+    <link rel="stylesheet" href="../tp04-05/stylesFormularios.css">
     <script src="https://kit.fontawesome.com/80f5c748e4.js" crossorigin="anonymous"></script>
     <title>Login MercadoLiebre</title>
 </head>
@@ -24,19 +24,22 @@
                 <li><a href="Mis-compras" class="ultimos">Mis compras <i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         
     </header>
+    <main>
     <form id="login" action="login" method="POST" onsubmit="return registrarYRedirigir()">
-        <label id="nombre">Nombre de Usuario</label>
-        <br>
-        <input type="text" id="usuario" placeholder="Apruebeme">
-        <br>
+        <div class="titulo-formulario">
+        <label id="nombre" >Nombre de Usuario</label>
+        <input type="text" id="usuario" placeholder="Apruebeme" class="campo-rellenable">
+        </div>
+        <div class="titulo-formulario">
         <label id="contraseña">Contraseña</label>
-        <br>
-        <input type="password" id="password" placeholder="Por fa">
-        <br>
-        <br>
-        <button type="submit">Logear y volver a página principal</button>
+        <input type="password" id="password" placeholder="Por fa" class="campo-rellenable">
+        </div>
+        <button type="submit" class="botones" id="boton-login">Logear y volver a página principal</button>
     </form>
 
     <script>
@@ -45,5 +48,6 @@
             return false
         }
     </script>
+    </main>
 </body>
 </html>

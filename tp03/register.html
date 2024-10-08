@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../tp04/stylesFormularios.css">
+    <link rel="stylesheet" href="../tp04-05/stylesFormularios.css">
     <script src="https://kit.fontawesome.com/80f5c748e4.js" crossorigin="anonymous"></script>
     <title>Registro MercadoLiebre</title>
 </head>
@@ -24,75 +24,53 @@
                 <li><a href="Mis-compras" class="ultimos">Mis compras <i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+            </div> 
     </header>
     <div class="register-container">
         <form id="formularioDePrueba" action="datos-de-registro" method="POST">
-            <label>Nombre de Usuario</label>
-            <br>
-            <input type="text" id="usuario" name="Usuario" placeholder="Nombre de Usuario" required>
-            <br>
-            <br>
-
-            <label>Nombre/s</label>
-            <br>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
-            <br>
-            <br>
-
-            <label>Apellido/s</label>
-            <br>
-            <input type="text" id="apellido" name="apellido" placeholder="Apellido completo" required>
-            <br>
-            <br>
-
-            <label id="email">Correo Electronico</label>
-            <br>
-            <input type="email" id="correo-electronico" name="correo-electronico" placeholder="Correo electronico" required>
-            <br>
-            <br>
-
-            <label id="birthday-date">Fecha de nacimiento</label>
-            <br>
-            <input type="date" id="fecha-de-nacimiento" name="fecha-de-nacimiento" required>
-            <br>
-            <br>
-
-            <label id="adress">Domicilio</label>
-            <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio completo" required>
-            <br>
             <div>
+                 <input type="text" id="usuario" name="Usuario" placeholder="Nombre de Usuario" required class="campo-rellenable">
+            </div>
+            <div>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required class="campo-rellenable">
+            </div>
+            <div>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido completo" required class="campo-rellenable">
+            </div>
+            <div>
+                <input type="email" id="correo-electronico" name="correo-electronico" placeholder="Correo electronico" required class="campo-rellenable">
+            </div>
+            <div>
+                <label id="birthday-date">Fecha de nacimiento</label>
+                <input type="date" id="fecha-de-nacimiento" name="fecha-de-nacimiento" required class="campo-rellenable">
+            </div>
+            <div>
+                <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio completo" required class="campo-rellenable">
+            </div>
+            <div class="campo-rellenable">
                 <p>Categorias de interes: (Puede seléccionar más de una)</p>
                 <label><input type="checkbox" name="Categorias-array[]" value="electro">Electro</label>
-                <br>
                 <label><input type="checkbox" name="Categorias-array[]" value="moda">Moda</label>
-                <br>
                 <label><input type="checkbox" name="Categorias-array[]" value="hogar">Hogar</label>
-                <br>
                 <label><input type="checkbox" name="Categorias-array[]" value="jugueteria">Jugueteria</label>
-                <br>
                 <label id="interes"><input type="checkbox" name="Categorias-array[]" value="vida_sana">Vida Sana</label>
-            <br>
-            <br>
             </div>
-            <label id="profile-picture">Seleccione foto de perfil:<input type="file" id="foto-de-perfil" accept="image/*"></label>
-            <br>
-            <br>
-            <label>Introduzca su contraseña: <input type="password" name="password" id="password" required></label>
-            <br>
-            <br>
-            <label>Confirmar su contraseña: <input type="password" name="password1" id="password1" required></label>
-            <br>
-            
-            
-            <br>
+            <label id="profile-picture">Seleccione foto de perfil:<input type="file" id="foto-de-perfil" accept="image/*" class="campo-rellenable"></label>
+
+            <label>Introduzca su contraseña: <input type="password" name="password" id="password" required class="campo-rellenable"></label>
+
+            <label>Confirmar su contraseña: <input type="password" name="password1" id="password1" required class="campo-rellenable"></label>
+
             <!-- tengo que poner onclick en vez de submit -->
-            <button type="submit" onclick=registrarYRedirigir()>Registrarme y volver a página principal</button>
+            <button type="submit" onclick=registrarYRedirigir() class="botones">Registrarme y volver a página principal</button>
             <script> function registrarYRedirigir(){window.location.href="../home.html"}; </script>
-            <br>
-            <br>
-            <input type="reset" value="Limpiar datos">
+
+            <input type="reset" value="Limpiar datos" class="botones">
 
         </form>
     </div>
+
 </body>
 </html>
