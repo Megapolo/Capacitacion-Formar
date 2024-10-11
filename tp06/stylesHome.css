@@ -16,6 +16,47 @@ header {
     text-align: left; 
 }
 
+.barra-superior {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "logo sreachbar"
+    "slogan slogan";
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sreachbar {
+    grid-area: sreachbar;
+    width: 100%;
+    align-content: center;
+    text-align:  center;
+}
+
+.sreachbar-estilo {
+    border-radius: 3px;
+    width: 95%;
+}
+
+.slogan {
+    margin-left: 10px;
+    grid-area: slogan;
+    margin: auto;
+    text-align: center;
+}
+
+.slogan i {
+    text-align: end;
+}
+
 header h2 {
     font-size: 1.5vh;
     display: flex;
@@ -37,7 +78,13 @@ display: none;
     margin: auto; 
 }
 
+.banner {
+    width: 100%; 
+    display: none;
+}
+
 .titulares {
+    color: rgb(100, 100, 100);
     font-size: 24px;
     text-align: center;
 }
@@ -47,12 +94,14 @@ display: none;
 }
 
 .icono-articulo {
+    background-color: white;
+    display: block;
     color: #00A650;
-    padding: 10px;
+    padding: 5px;
     border: solid 2px #00A650;
-    border-radius: 50%;
-    margin-top: 5px;
-    margin-left: 5px;
+    border-radius: 50%; 
+    margin-top: -15px;
+    margin-left: 150px;
 }
 
 .precios {
@@ -63,6 +112,7 @@ display: none;
 
 .descuento {
     color: #00A650;
+    margin-left: 10px;
 }
 
 .articulos {
@@ -75,6 +125,12 @@ display: none;
     margin: auto;
     margin-top: 20px;
 }
+.acomodar-precios-y-descuentos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 
 div h3 {
     margin-top: 5px;
@@ -104,6 +160,7 @@ footer p {
     padding: 1em 1.5em 0.5em 1em;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .titulo-footer {
@@ -146,13 +203,20 @@ header {
     margin-right: 20px
 }
 
-.sreachbar {
-    display: inline-block;
-    margin-right: 10vw;
-    margin-left: 2vw;
-    height: 35px;
-    width: 70vw;
+.barra-superior {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "logo sreachbar slogan";
+}
+
+.sreachbar-estilo {
     border-radius: 5px;
+}
+
+.slogan {
+    grid-area: slogan;
+    margin: auto;
 }
 
 header h2 {
@@ -180,11 +244,11 @@ ul li {
     box-sizing: border-box;
 }
 
-.titulares {
-    font-size: 24px;
-    text-align: center;
-
+.banner {
+    display: block;
 }
+
+
 .precios {
     font-size: 18px;
 }
@@ -197,14 +261,11 @@ ul li {
 }
 
 .articulos {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
     margin-top: 20px;
-    width: fit-content; 
     justify-content: space-between;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
+
 
 }
 div h3 {
