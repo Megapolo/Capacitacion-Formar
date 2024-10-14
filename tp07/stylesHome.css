@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #ebebeb;
+    font-size: 12px;
+    margin: 0px 0px 0px 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8vh;
+    
+}
+
+header {
+    background-color: #EAC926; 
+    color: black; 
+    padding: 20px; 
+    text-align: left; 
+}
+
+.barra-superior {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "logo sreachbar"
+    "slogan slogan";
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sreachbar {
+    grid-area: sreachbar;
+    width: 100%;
+    align-content: center;
+    text-align:  center;
+}
+
+.sreachbar-estilo {
+    border-radius: 3px;
+    width: 95%;
+}
+
+.slogan {
+    margin-left: 10px;
+    grid-area: slogan;
+    margin: auto;
+    text-align: center;
+}
+
+.slogan i {
+    text-align: end;
+}
+
+header h2 {
+    font-size: 1.5vh;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+display: none;
+}
+
+.burger-menu {
+    color: white;
+    display: flex;
+    justify-content: center;  
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1259c3;
+    width: fit-content; 
+    margin: auto; 
+}
+
+.banner {
+    width: 100%; 
+    display: none;
+}
+
+.titulares {
+    color: rgb(100, 100, 100);
+    font-size: 24px;
+    text-align: center;
+}
+
+.img-articulo {
+    border-bottom: solid 1px #ebebeb;
+}
+
+.icono-articulo {
+    background-color: white;
+    display: block;
+    color: #00A650;
+    padding: 5px;
+    border: solid 2px #00A650;
+    border-radius: 50%; 
+    margin-top: -15px;
+    margin-left: 150px;
+    transition: 0.3s;
+}
+
+.precios {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.descuento {
+    color: #00A650;
+    margin-left: 10px;
+}
+
+.articulos {
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;       
+    width: fit-content;
+    align-items: start;
+    margin: auto;
+    margin-top: 20px;
+}
+.acomodar-precios-y-descuentos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+div h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: white;
+    margin: 20px 3px 3px 3px;
+    padding-top: 20px;
+}
+
+.icono-footer {
+    color: #1259c3;;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+ 
+footer p {
+    display: flex;
+    padding: 1em 1.5em 0.5em 1em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo-footer {
+    text-align: left;
+    padding: 0%;
+}
+
+.copyright {
+    display: block;
+    color: grey;
+    margin-top: 5vh;
+    font-size: 1.2vh;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+
+.burger-menu {
+    display: none;
+}
+body {
+    background-color: #ebebeb;
+    margin: 0px 0px 0px 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8vh;
+}
+
+header {
+    background-color: #EAC926; 
+    color: black; 
+    text-align: left; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 20px
+}
+
+.barra-superior {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "logo sreachbar slogan";
+}
+
+.sreachbar-estilo {
+    border-radius: 5px;
+}
+
+.slogan {
+    grid-area: slogan;
+    margin: auto;
+}
+
+header h2 {
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    font-size: 1.5vh;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+ul li {
+    text-align: center; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.banner {
+    display: block;
+}
+
+
+.precios {
+    font-size: 18px;
+}
+
+.contenedor-articulos{
+    display: grid;
+    gap: 20px;                    
+    border: solid 20px #ebebeb;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.articulos {
+    margin-top: 20px;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+
+}
+.descripcion-de-articulo {
+    opacity: 0;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.articulos:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.articulos:hover .descripcion-de-articulo {
+    opacity: 1;
+}
+.articulos:hover .icono-articulo{
+    transform: rotate(-90deg);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contenedor-articulos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "tarjeta envio seguridad"
+    }
+    
+    .footer-tarjeta {
+        grid-area: tarjeta;
+    }
+
+    .footer-envio {
+        grid-area: envio;
+    }
+
+    .footer-seguridad {
+        grid-area: seguridad;
+    }
+    
+    .footer-tarjeta:hover .icono-footer {
+        color: #00A650;
+    }
+    .footer-envio:hover .icono-footer {
+        color: #00A650;
+    }
+    .footer-seguridad:hover .icono-footer {
+        color: #00A650;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .contenedor-articulos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
