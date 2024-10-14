@@ -150,8 +150,7 @@ footer {
 .icono-footer {
     color: #1259c3;;
     font-size: 2em;
-    display: flex;
-    justify-content: center;
+    margin-left: 47%;
     margin-top: 0.5em;
     margin-bottom: 10px;
     transition: 0.3s;
@@ -312,13 +311,13 @@ ul li {
         grid-area: seguridad;
     }
     
-    .footer-tarjeta:hover .icono-footer {
+    .icono-footer:hover {
         color: #00A650;
     }
-    .footer-envio:hover .icono-footer {
+    .icono-footer:hover {
         color: #00A650;
     }
-    .footer-seguridad:hover .icono-footer {
+    .icono-footer:hover {
         color: #00A650;
     }
 }
