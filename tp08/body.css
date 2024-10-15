@@ -1,0 +1,143 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/fondo-minimalista.jpg);
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.imagen {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    margin-left: 20%;
+    transition: 0.3s;
+}
+
+.foto-del-Matt {
+    max-width: 300px;
+    position: absolute;
+    top: -110px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.logo {
+    width: 30%;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 1024px){
+
+.logo:hover {
+    align-items: center;
+}
+
+.imagen {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    margin-left: 20%;
+    transition: 0.3s;
+}
+
+.imagen:hover {
+    border-radius: 20px;
+
+    .foto-del-Matt {
+        top: -135px;
+    }
+}
+
+.foto-del-Matt {
+    max-width: 300px;
+    position: absolute;
+    top: -110px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+main {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 15vw 1fr 1fr;
+    grid-template-rows: 1fr 15vh;
+    min-height: 50vh;
+    grid-template-areas: 
+    "aside principal imagen"
+    "aside contacto .";
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    grid-area: aside;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+aside a:hover {
+    color: blueviolet;
+}
+
+aside a {
+    font-size: 30px;
+    color: black;
+    align-items: center;
+    padding: 5%;
+    transition: 0.3s;
+
+}
+
+#titulo-matias {
+    font-size: 35px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.principal {
+    grid-area: principal;
+    font-family: 'Source Code Pro';
+    gap: 1vh;
+    transition: 0.3s;
+}
+
+.principal:hover {
+    color: white;
+    background-color:#271D31;
+    border-radius: 30px;
+    font-size: 22px;
+}
+
+.imagen {
+    grid-area: imagen;
+}
+
+.contacto-main {
+    font-family: "Source Code Pro";
+    font-size: 15px;
+    color: black;
+    grid-area: contacto;
+    margin: 30px 0px 0px 20px;
+    padding: 2vh 2vw 2vh 2vw;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.3s;
+    background-color: rgb(84, 35, 131);
+    border-radius: 8px;
+}
+
+.contacto-main:hover {
+    background-color: rgb(20, 1, 26);
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+}
