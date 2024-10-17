@@ -1,3 +1,75 @@
+header {
+    text-align: center;
+    margin-right: 0;
+}
+
+.logo {
+    width: 70vw;
+}
+
+
+
+.menu-hamburguesa {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+.burguer-button {
+    margin-top: 2vh;
+    background-color: blueviolet;
+    padding: 4vw;
+    border-radius: 1vw;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-bar {
+    background-color: blueviolet;
+    border-radius: 1vw;
+    height: 0px;
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    transition: 0.3s;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-align: start;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+    transition: 0.3s;
+    font-size: 0px;
+}
+
+nav ul:first-child {
+    padding-top: 0;
+}
+
+.menu-hamburguesa {
+    display: none;
+}
+
+.menu-hamburguesa:checked + .nav-bar {
+    height: 200px;
+    padding: 0 2em 0.5em 2em;
+    a {
+        font-size: 16px;
+        padding: 0 1em 0 1em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .burguer-button {
+        display: none;
+    }
+    
+} 
+}
+    
 @media screen and (min-width: 1024px){
 header {
     display: grid;
@@ -5,6 +77,10 @@ header {
     grid-template-rows: 1fr;
     grid-template-areas:
     "logo-grid nav-bar-grid";
+}
+
+.burguer-button {
+    display: none;
 }
 
 .logo {
@@ -22,6 +98,7 @@ header {
 
 .section-nav-bar {
     grid-area: nav-bar-grid;
+
 }
 
 .nav-bar {

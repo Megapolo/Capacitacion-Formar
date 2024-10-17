@@ -16,9 +16,11 @@
 </head>
 <body>
     <header>
-        <img src="./images/logo.png" alt="Matías-logo" class="logo">
+        <img src="./images/logo.png" alt="Matías-logo" class="logo" id="logo">
         <section class="section-nav-bar">
             <nav>
+                <label class="labe-hamburugesa" for="menu-hamburguesa"><i class="fa-solid fa-bars burguer-button"></i></label>
+                <input class="menu-hamburguesa" type="checkbox" id="menu-hamburguesa"> 
                 <ul class="nav-bar">
                     <a href="" class="home"><li>Home</li></a>
                     <a href="" class="sobre-mi"><li>Sobre mí</li></a>
@@ -31,14 +33,14 @@
     </header>
     <main>
         <section class="principal">
-            <h1 id="titulo-matias">¡Hola! Soy Matías Espínola</h1>
-            <h3 class="texto-principal">Futuro Web Developer Jr.</h3>
+            <h1 id="titulo-matias">¡Hola! Soy <span class="nombre">Matías Espínola</span></h1>
+            <h3 class="texto-principal" id="subtitulo">Futuro Web Developer Jr.</h3>
             <h4 class="texto-principal">Estudiante de la fundación Formar de Argentina y en un futuro también estudiante de la universidad nacional de Hurlingham.</h4>
         </section>
         <section class="imagen">
             <img src="./images/IMG_20230207_132559.jpg" alt="foto-fachera-del-Matt" class="foto-del-Matt">
         </section>
-        <aside >
+        <aside>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
             <a href=""><i class="fa-brands fa-github"></i></a>
@@ -47,7 +49,7 @@
         <a href="" class="contacto-main">Contacto</a>
     </main>
     <footer>
-        <a href="" class="a-footer"><i class="fa-solid fa-computer-mouse"></i> Scrolear hacia abajo</a>
+        <a href="#logo" class="a-footer"><i class="fa-solid fa-computer-mouse"></i> Scrolear hacia arriba</a>
     </footer>
 </body>
 </html>

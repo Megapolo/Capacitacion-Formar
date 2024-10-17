@@ -1,26 +1,67 @@
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/fondo-minimalista.jpg);
     font-family: "Roboto", sans-serif;
+    margin-right: 0;
 }
 
 ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    
+h1,h2,h3 {
+    margin: 0;
+}
+
+h4 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#titulo-matias {
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+#subtitulo {
+    text-align: center;
+    margin-top: 0;
+    font-size: 3.2vw;
+    background-color: none;
+}
+
+.principal {
+    font-family: 'Source Code Pro';
+    color: rgb(199, 199, 199);
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    background-color: rgb(35, 4, 41);
+    padding: 10px 2px 5px 2px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
 .imagen {
-    width: 300px;
-    height: 300px;
+    width: 50vw;
+    height: 50vw;
     overflow: hidden;
     position: relative;
     border-radius: 50%;
-    margin-left: 20%;
+    margin-left: 25%;
     transition: 0.3s;
+    margin-top: 2vh;
 }
 
 .foto-del-Matt {
-    max-width: 300px;
+    max-width: 50vw;
     position: absolute;
-    top: -110px;
+    top: -85px;
     object-fit: cover;
     transition: 0.3s;
 }
@@ -28,6 +69,35 @@ ul {
 .logo {
     width: 30%;
     transition: 0.3s;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    gap:  10px;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    a {
+        width: 12vw;
+        height: 12vw;
+        text-align: center;
+        i {
+            font-size: 7vw;
+        }
+    }
+}
+
+.contacto-main {
+    margin-top: 3em;
+    padding: 1em;
+    background-color: blueviolet;
+    border-radius: 1vw;
+    text-align: center;
+    margin-left: 35%;
+}
+
+
 }
 
 @media screen and (min-width: 1024px){
@@ -48,9 +118,11 @@ ul {
 
 .imagen:hover {
     border-radius: 20px;
+    width: 400px;
+    height: 400px;
 
     .foto-del-Matt {
-        top: -135px;
+        top: -165px;
     }
 }
 
@@ -62,11 +134,16 @@ ul {
     transition: 0.3s;
 }
 
+.foto-del-Matt:hover {
+    max-width: 400px;
+    width: 400px;
+}
+
 main {
     margin-top: 10vh;
     display: grid;
     grid-template-columns: 15vw 1fr 1fr;
-    grid-template-rows: 1fr 15vh;
+    grid-template-rows: 30vh 15vh;
     min-height: 50vh;
     grid-template-areas: 
     "aside principal imagen"
@@ -96,7 +173,7 @@ aside a {
 }
 
 #titulo-matias {
-    font-size: 35px;
+    font-size: 3.2vh;
     text-align: center;
     font-family: "Roboto", sans-serif;
 }
@@ -112,7 +189,10 @@ aside a {
     color: white;
     background-color:#271D31;
     border-radius: 30px;
-    font-size: 22px;
+    font-size: 2.1vh;
+    .nombre {
+        text-decoration: underline;
+    }
 }
 
 .imagen {
