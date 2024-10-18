@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/fondo-minimalista.jpg);
+    background-size: cover;
     font-family: "Roboto", sans-serif;
     margin: 0;
     display: flex;
@@ -15,7 +16,8 @@ a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 767px) {
+
+@media screen  and (max-width: 767px) {
     
 h1,h2,h3 {
     margin: 0;
@@ -69,11 +71,6 @@ h4 {
     transition: 0.3s;
 }
 
-.logo {
-    width: 30%;
-    transition: 0.3s;
-}
-
 aside {
     display: flex;
     flex-direction: row;
@@ -100,9 +97,102 @@ aside {
     margin-left: 35%;
 }
 
-
 }
 
+@media screen and (max-width: 320px) {
+    
+    .foto-del-Matt {
+        max-width: 50vw;
+        position: absolute;
+        top: -70px;
+        object-fit: cover;
+        transition: 0.3s;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+.foto-del-Matt {
+    max-width: 50vw;
+}
+    
+.principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 1rem 8rem;
+    grid-template-areas:
+    "titulo-main"
+    "sub-titulo"
+    "contenido" ;
+    text-align: center;
+    background-color: rgb(44, 17, 70);
+    color: #ebebeb;
+    border-radius: 2em;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+} 
+
+#titulo-matias {
+    grid-area: titulo-main;
+}
+
+#subtitulo {
+    grid-area: sub-titulo;
+    margin-top: 0px;
+}
+
+#contenido {
+    grid-area: contenido;
+    margin-left: 2em ;
+    margin-right: 2em;
+    text-align: center;
+}
+
+.imagen {
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 2em;
+}
+
+.foto-del-Matt {
+    max-width: 400px;
+    position: absolute;
+    top: -160px;
+    left: 0px;
+    object-fit: cover;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    gap:  10px;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    a {
+        width: 12vw;
+        height: 12vw;
+        text-align: center;
+        i {
+            font-size: 7vw;
+        }
+    }
+}
+
+.contacto-main {
+    margin-left: 43.5%;
+    padding: 1em;
+    background-color: blueviolet;
+    border-radius: 1em;
+}
+
+}
 @media screen and (min-width: 1024px){
 
 .logo:hover {
@@ -116,6 +206,7 @@ aside {
     position: relative;
     border-radius: 50%;
     margin-left: 20%;
+    grid-area: imagen;
     transition: 0.3s;
 }
 
@@ -196,10 +287,6 @@ aside a {
     .nombre {
         text-decoration: underline;
     }
-}
-
-.imagen {
-    grid-area: imagen;
 }
 
 .contacto-main {
