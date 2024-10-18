@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/fondo-minimalista.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/fondo-minimalista.jpg);
     background-size: cover;
     font-family: "Roboto", sans-serif;
     margin: 0;
